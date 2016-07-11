@@ -1183,6 +1183,10 @@ class FactionCommands {
         } else {
             $this->plugin->getServer()->getLogger()->info($this->plugin->formatMessage("Please run command in game"));
         }
+                     //////////////////////// Emblem ////////////////////////
+                     if (strtolower($args[0]) == "[<----<<]" or strtolower($args[0]) == "") {
+                        $sender->sendMessage($this->plugin->formatMessage("", false));
+                        return true;
     }
 
 }

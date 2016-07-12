@@ -1183,10 +1183,12 @@ class FactionCommands {
         } else {
             $this->plugin->getServer()->getLogger()->info($this->plugin->formatMessage("Please run command in game"));
         }
-                     //////////////////////// Emblem ////////////////////////
-                     if (strtolower($args[0]) == "[<----<<]" or strtolower($args[0]) == "") {
-                        $sender->sendMessage($this->plugin->formatMessage("", false));
+                     //////////////////////// Rank ////////////////////////
+                     if (strtolower($args[0]) == "quest") {
+                        $sender->sendMessage($this->plugin->formatMessage("Quests are 1k Power for [Bronze] Fac Tag, 5k Power for [Silver] Fac Tag, and 10k Power for [Gold] Fac Tag. "));
                         return true;
+                     }
+                     if()
     }
 
 }
